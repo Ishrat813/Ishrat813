@@ -1,4 +1,6 @@
-## Hi there 👋
+## Hi there 👋</br>
+I am Ishrat Nisa </br>
+Just a begginer of my coding jurney 
 
 <!--
 **Ishrat813/Ishrat813** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
