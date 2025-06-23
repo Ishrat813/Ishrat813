@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Business Website Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0a66c2;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      padding: 100px 2rem 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 6rem;
+      background-color: #e9f1ff;
+      padding-bottom: 4rem;
+    }
+
+    header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #0a66c2;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    h3 {
+      color: #0a66c2;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #0a66c2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #084d9b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      header h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>YourDev</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<header>
+  <h2>Professional Website Development</h2>
+  <p>Get a responsive, modern website built to grow your business online.</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="card">
+    <h3>About Me</h3>
+    <p>Hi, I'm <strong>Ishrat</strong>, a dedicated website developer helping small businesses, startups, and professionals establish a powerful online presence. With expertise in modern web technologies, I create fast, mobile-friendly, SEO-ready websites tailored to your brand.</p>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <div class="card">
+    <h3>Services</h3>
+    <ul>
+      <li>Business Website Development</li>
+      <li>Personal Portfolio Websites</li>
+      <li>Online Stores (E-commerce)</li>
+      <li>Landing Pages for Ads & Promotions</li>
+      <li>Mobile & Tablet Responsive Design</li>
+      <li>Speed and SEO Optimization</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="card">
+    <h3>Contact Me</h3>
+    <p>Have a project in mind? Let's talk. Fill the form below or email me directly at <strong>ishratnisa@outlook.com</strong>.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2025 Ishrat | Website Developer | All Rights Reserved
+</footer>
+
+<!-- JavaScript for smooth scrolling -->
+<script>
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
